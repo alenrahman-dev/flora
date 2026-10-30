@@ -75,7 +75,7 @@ section div{
     background-size: cover;
     background-position: center;
     transition: .5s ease;
-    box-shadow: 1px 1px 15px var(--primary), -1px -1px 15px var(--primary);
+    box-shadow: 0px 0px 20px var(--primary);
 }
 .img1{
     background-image: url('./1.jpg');
