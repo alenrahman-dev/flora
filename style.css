@@ -1,0 +1,109 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing : border-box;
+  font-weight: bold;
+}
+:root{
+  --bg: rgb(239, 243, 230);
+  --card: rgb(205, 220, 190);
+  --primary: rgb(65, 95, 70);
+  --secondary: rgb(190, 145, 95);
+  --text: rgb(35, 50, 38);
+  --hedfot: rgba(190, 145, 95, .5);
+}
+
+
+.card {
+  background: var(--card);
+}
+
+button {
+  background: var(--primary);
+  color: var(--bg);
+}
+body{
+  color: var(--text);
+	margin          : 0;
+	padding         : 0;
+	background-color: var(--bg);
+}
+header {
+	display         : flex;
+	justify-content : space-between;
+	align-items     : center;
+	padding         : 17px 30px;
+	background-color: var(--hedfot);
+	position        : fixed;
+	top             : 0;
+	color           : var(--text);
+	width           : 100%;
+	font-weight     : bold;
+	z-index         : 999;
+}
+header a{
+	color          : var(--text);
+	font-size      : 19px;
+	transition     : .3s ease;
+	font-weight    : bold;
+	text-decoration: none;
+}
+header a:hover{
+	color : #448a66;
+	cursor: pointer;
+}
+nav a{
+	color          : var(--text);
+	margin-left    : 18px;
+	text-decoration: none;
+	font-size      : 19px;
+	transition     : .3s ease;
+}
+nav a:hover{
+	color: #448a66;
+}
+
+.hero{
+	display        : flex;
+	margin-top     : 140px;
+	align-items    : center;
+	justify-content: space-between;
+}
+.left{
+	color      : var(--text);
+	font-size  : 17px;
+	font-weight: bold;
+	margin-left: 58px;
+	margin-top : 60px;
+	height     : 450px;
+	max-width  : 40vw;	
+}
+.right{
+	border-radius: 14px;
+	height       : 450px;
+	width        : 450px;
+	background   : url(./1.jpg) center / cover no-repeat;
+	margin-right : 30px;
+	transition   : .3s ease;
+	transition   : transform .3s ease;
+}
+.right:hover{
+	transform: scale(1.06);
+	z-index  : 1
+}
+.left h1, h3, p{
+	color: var(--text);
+}
+
+footer{
+    background-color: var(--hedfot);
+    color: var(--text);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    color: var(--text);
+    text-decoration: none;
+}

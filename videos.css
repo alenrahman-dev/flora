@@ -1,0 +1,103 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing : border-box;
+}
+:root{
+  --bg: rgb(239, 243, 230);
+  --card: rgb(205, 220, 190);
+  --primary: rgb(65, 95, 70);
+  --secondary: rgb(190, 145, 95);
+  --text: rgb(35, 50, 38);
+  --hedfot: rgba(190, 145, 95, .5);
+}
+
+
+.card {
+  background: var(--card);
+}
+
+button {
+  background: var(--primary);
+  color: var(--bg);
+}
+body{
+  color: var(--text);
+	margin          : 0;
+	padding         : 0;
+	background-color: var(--bg);
+}
+header {
+	display         : flex;
+	justify-content : space-between;
+	align-items     : center;
+	padding         : 17px 30px;
+	background-color: var(--hedfot);
+	position        : fixed;
+	top             : 0;
+	color           : var(--text);
+	width           : 100%;
+	font-weight     : bold;
+	z-index         : 999;
+}
+header a{
+	color          : var(--text);
+	font-size      : 19px;
+	transition     : .3s ease;
+	font-weight    : bold;
+	text-decoration: none;
+}
+header a:hover{
+	color : #448a66;
+	cursor: pointer;
+}
+nav a{
+	color          : var(--text);
+	margin-left    : 18px;
+	text-decoration: none;
+	font-size      : 19px;
+	transition     : .3s ease;
+}
+nav a:hover{
+	color: #448a66;
+}
+
+
+section{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 150px;
+}
+section div{
+	
+	border-radius: 14px;
+    background-position: center;
+    background-size: cover;
+}
+section div video{
+	border-radius: 14px;
+    width: 500px;
+    height: 360px;
+	margin-bottom: 60px;
+    background-position: center;
+	object-fit: cover;
+	transition: 0.3s ease-in-out;
+
+}
+section div video:hover{
+	transform: scale(1.06);
+	box-shadow: 0px 0px 20px var(--primary);
+}
+footer{
+    background-color: var(--hedfot);
+    color: var(--text);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+    bottom: 0;
+    width: 100%;
+}
+footer a{
+    color: var(--text);
+    text-decoration: none;
+}
